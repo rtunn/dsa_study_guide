@@ -7,7 +7,7 @@ Poor worst case time, but generally very fast in practice.
 ## quick_sort
 
 1. Early return if sequence length is less than 2
-2. retrive pivot by calling partition
+2. retrieve pivot by calling partition
 3. call quick_sort recursively for sequence left of pivot and right of pivot
 
 ## partition
@@ -22,16 +22,17 @@ Poor worst case time, but generally very fast in practice.
 
 ## Time Complexity
 
-Best: N log N
+Best: n log n
 T(n) = 2T(n/2) + theta(n)
 
-Avg: N log N
+Avg: n log n
 T(n) = T(k) + T(n - k - 1) + theta(n)
 
-Worst: N^2
+Worst: n^2
 T(n) = T(0) + T(n - 1) + theta(n)
 
 ## Space Complexity
 
-Linear -- O(1)
-No additional space is required
+Avg: log n
+Worst: n
+Constant space is required for each recursion

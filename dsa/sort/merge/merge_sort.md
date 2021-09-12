@@ -21,12 +21,12 @@ Stable sorting technique using divide and conquer
 
 ## Time Complexity
 
-Best: N logN
-Avg: N logN
-Worst: N logN
+Best: n log n
+Avg: n log n
+Worst: n log n
 
 T(N) = 2T(N/2) + theta(N)
 
 ## Space Complexity
 
-Worst: N
+Worst: n
