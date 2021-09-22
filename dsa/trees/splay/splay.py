@@ -174,21 +174,3 @@ class SplayTree:
         self.post_order(node.right, order)
         order.append(node)
         return order
-
-
-if __name__ == '__main__':
-    splay = SplayTree()
-    splay.root = splay.get_node(4)
-    splay.root.left = splay.get_node(2)
-    splay.root.left.left = splay.get_node(1)
-    splay.root.left.right = splay.get_node(3)
-    splay.root.right = splay.get_node(6)
-    splay.root.right.left = splay.get_node(5)
-    splay.root.right.right = splay.get_node(7)
-    print(list(map(lambda node: node.value, splay.in_order(splay.root))))
-    print(list(map(lambda node: node.value, splay.in_order(splay.root))))
-    print(list(map(lambda node: node.value, splay.in_order(splay.root))))
-    # # splay.delete(2)
-    splay.splay(splay.root, 2)
-    # print(splay.root.value)
-    print(splay.root, splay.root.left, splay.root.right, sep='\n')
